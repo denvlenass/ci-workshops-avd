@@ -16,7 +16,7 @@ build-site-1: ## Build Configs
 
 .PHONY: deploy-site-1
 deploy-site-1: ## Deploy Configs via eAPI
-	ansible-playbook playbooks/deploy.yml -i sites/site_1/inventory.yml -e "target_hosts=SITE1_FABRIC"
+	ansible-playbook playbooks/deploy.yml -i sites/site_1/inventory.yml -e "target_hosts=SITE1_FABRIC" -vvv
 
 .PHONY: cvp-legacy-site-1
 cvp-legacy-site-1: ## Deploy Configs via CloudVision Legacy Network Provisioning

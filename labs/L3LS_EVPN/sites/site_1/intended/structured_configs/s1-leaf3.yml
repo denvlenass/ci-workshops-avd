@@ -298,7 +298,7 @@ vlan_interfaces:
   description: Twenty
   shutdown: false
   vrf: OVERLAY
-  ip_address_virtual: 10.20.20.1/2
+  ip_address_virtual: 10.20.20.1/24
   tenant: S1_FABRIC
 - name: Vlan3009
   description: MLAG_L3_VRF_OVERLAY
