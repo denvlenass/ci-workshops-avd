@@ -19,6 +19,21 @@ cv_token: # Fill in here with a CloudVision Service Account Token
 cv_server: cvp
 cv_verify_certs: false
 
+# Login Banner
+banners:
+  motd: |
+    You shall not pass. Unless you are authorized. Then you shall pass.
+    EOF
+
+# Syslog
+logging:
+  vrfs:
+    - name: default
+      source_interface: Management0
+      hosts:
+        - name: 10.200.0.108
+        - name: 10.200.1.108
+
 # arista.avd.eos_config_deploy_cvp role parameters
 cv_collection: v3
 execute_tasks: true
